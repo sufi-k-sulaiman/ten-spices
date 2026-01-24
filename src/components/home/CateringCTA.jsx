@@ -10,8 +10,8 @@ export default function CateringCTA() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1555244162-803834f70033?w=1920&q=80"
-          alt="Catering setup"
+          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/7588427f9_image.png"
+          alt="Catering spread"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-stone-900/80" />
@@ -79,8 +79,8 @@ export default function CateringCTA() {
           >
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80"
-                alt="Catered event"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/329dd1a66_image.png"
+                alt="Delicious spring rolls"
                 className="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl">

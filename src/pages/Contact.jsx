@@ -61,7 +61,7 @@ export default function Contact() {
       <section className="relative pt-32 pb-20 bg-stone-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/5350c96c8_image.png"
             alt="Restaurant exterior"
             className="w-full h-full object-cover opacity-30"
           />

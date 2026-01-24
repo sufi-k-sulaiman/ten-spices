@@ -8,25 +8,25 @@ export default function FeaturedMenu({ items = [] }) {
   const categories = [
     {
       name: 'Breakfast',
-      image: 'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80',
+      image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/aa209d089_image.png',
       description: 'Start your day with our aromatic morning delights',
       category: 'breakfast'
     },
     {
       name: 'Lunch',
-      image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80',
+      image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/923619624_image.png',
       description: 'Fresh, flavorful midday creations',
       category: 'lunch'
     },
     {
       name: 'Dinner',
-      image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+      image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/9bd8e0117_image.png',
       description: 'Exquisite evening dining experience',
       category: 'dinner'
     },
     {
       name: 'Beverages',
-      image: 'https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80',
+      image: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/0c24d8232_image.png',
       description: 'Refreshing drinks & specialty coffees',
       category: 'beverages'
     }
@@ -116,7 +116,7 @@ export default function FeaturedMenu({ items = [] }) {
                 >
                   <div className="relative h-48">
                     <img
-                      src={item.image_url || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80'}
+                      src={item.image_url || 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/60d789fbe_image.png'}
                       alt={item.name}
                       className="w-full h-full object-cover"
                     />

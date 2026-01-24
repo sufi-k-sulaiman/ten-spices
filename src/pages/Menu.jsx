@@ -62,8 +62,8 @@ export default function Menu() {
       <section className="relative pt-32 pb-20 bg-stone-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80"
-            alt="Food spread"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/ccab85747_image.png"
+            alt="Pastry selection"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-stone-900/80 to-stone-900" />

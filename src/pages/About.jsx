@@ -63,7 +63,7 @@ export default function About() {
       <section className="relative pt-32 pb-24 bg-stone-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1920&q=80"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/b00152205_image.png"
             alt="Restaurant kitchen"
             className="w-full h-full object-cover opacity-30"
           />
@@ -135,7 +135,7 @@ export default function About() {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=600&q=80"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/fa9ad8518_image.png"
                 alt="Chef preparing food"
                 className="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
               />

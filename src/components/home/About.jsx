@@ -41,15 +41,15 @@ export default function AboutSection() {
           >
             <div className="relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&q=80"
-                alt="Chef preparing food"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/d03e61717_image.png"
+                alt="Fresh sandwiches"
                 className="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 w-48 h-48 lg:w-64 lg:h-64">
               <img
-                src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=400&q=80"
-                alt="Spices"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/4891ec224_image.png"
+                alt="Gourmet sliders"
                 className="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-white"
               />
             </div>

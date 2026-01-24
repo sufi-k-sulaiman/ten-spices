@@ -125,7 +125,7 @@ export default function MenuGrid({ items = [], isLoading }) {
                 </DialogHeader>
                 <div className="space-y-4">
                   <img
-                    src={item.image_url || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80'}
+                    src={item.image_url || 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/60d789fbe_image.png'}
                     alt={item.name}
                     className="w-full h-48 object-cover rounded-xl"
                   />

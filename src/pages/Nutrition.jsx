@@ -50,7 +50,7 @@ export default function Nutrition() {
       <section className="relative pt-32 pb-20 bg-stone-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1920&q=80"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/67822425b_image.png"
             alt="Healthy food"
             className="w-full h-full object-cover opacity-30"
           />

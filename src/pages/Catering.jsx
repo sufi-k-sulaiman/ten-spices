@@ -85,7 +85,7 @@ export default function Catering() {
       <section className="relative pt-32 pb-24 bg-stone-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1555244162-803834f70033?w=1920&q=80"
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/e50a0f4ae_image.png"
             alt="Catering setup"
             className="w-full h-full object-cover opacity-30"
           />
