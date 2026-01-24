@@ -47,9 +47,14 @@ export default function Header() {
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/882b275dd_TenSpicesLogo.png"
+              src={isScrolled 
+                ? "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/882b275dd_TenSpicesLogo.png"
+                : "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/9eb93e71a_Group14.png"
+              }
               alt="Ten Spices Logo"
-              className="h-12 w-auto transition-all duration-300 group-hover:scale-105"
+              className={`transition-all duration-300 group-hover:scale-105 ${
+                isScrolled ? 'h-12 w-auto' : 'h-10 w-auto'
+              }`}
             />
           </Link>
 
