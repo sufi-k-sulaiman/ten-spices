@@ -150,8 +150,8 @@ export default function Contact() {
             >
               <div className="bg-white rounded-3xl shadow-xl p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center">
-                    <MessageSquare className="w-6 h-6 text-amber-600" />
+                  <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
                     <h2 className="font-serif text-2xl font-bold text-stone-800">Send a Message</h2>
@@ -217,7 +217,7 @@ export default function Contact() {
                   <Button
                     type="submit"
                     disabled={mutation.isPending}
-                    className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-xl py-6 text-lg font-semibold shadow-lg shadow-amber-500/25"
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-xl py-6 text-lg font-semibold shadow-lg shadow-purple-500/25"
                   >
                     {mutation.isPending ? (
                       'Sending...'
