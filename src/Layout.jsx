@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '@/components/navigation/Header';
 import Footer from '@/components/navigation/Footer';
 import { Toaster } from 'sonner';
 
 export default function Layout({ children }) {
+  useEffect(() => {
+    // Set favicon
+    const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'shortcut icon';
+    link.href = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/81602e853_favicon.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }, []);
   return (
     <div className="min-h-screen bg-stone-50">
       <style>
