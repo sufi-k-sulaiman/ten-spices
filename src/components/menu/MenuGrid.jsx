@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Wheat, Flame, Info } from 'lucide-react';
+import { Leaf, Wheat, Flame, Info, Plus } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -9,7 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export default function MenuGrid({ items = [], isLoading }) {
+export default function MenuGrid({ items = [], isLoading, onAddToCart }) {
   const getDietaryBadges = (item) => {
     const badges = [];
     if (item.is_vegetarian) badges.push({ icon: Leaf, label: 'Vegetarian', color: 'bg-green-500' });
@@ -111,14 +112,23 @@ export default function MenuGrid({ items = [], isLoading }) {
               </div>
             )}
 
-            {/* Details Dialog */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <button className="mt-4 flex items-center gap-2 text-sm text-purple-600 font-medium hover:text-purple-700 transition-colors">
-                  <Info className="w-4 h-4" />
-                  View Details
-                </button>
-              </DialogTrigger>
+            {/* Action Buttons */}
+            <div className="flex items-center gap-2 mt-4">
+              {onAddToCart && (
+                <Button
+                  onClick={() => onAddToCart(item)}
+                  className="flex-1 bg-purple-600 hover:bg-purple-700"
+                >
+                  <Plus className="w-4 h-4 mr-1" />
+                  Add to Cart
+                </Button>
+              )}
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Info className="w-4 h-4" />
+                  </Button>
+                </DialogTrigger>
               <DialogContent className="sm:max-w-lg">
                 <DialogHeader>
                   <DialogTitle className="font-serif text-2xl">{item.name}</DialogTitle>
@@ -193,10 +203,17 @@ export default function MenuGrid({ items = [], isLoading }) {
 
                   <div className="flex justify-between items-center pt-4 border-t">
                     <span className="text-2xl font-bold text-purple-600">${item.price?.toFixed(2)}</span>
+                    {onAddToCart && (
+                      <Button onClick={() => onAddToCart(item)} className="bg-purple-600 hover:bg-purple-700">
+                        <Plus className="w-4 h-4 mr-1" />
+                        Add to Cart
+                      </Button>
+                    )}
                   </div>
                 </div>
               </DialogContent>
             </Dialog>
+            </div>
           </div>
         </motion.div>
       ))}
