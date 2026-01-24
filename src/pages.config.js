@@ -4,6 +4,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Nutrition from './pages/Nutrition';
+import Order from './pages/Order';
 import __Layout from './Layout.jsx';
 
 
@@ -14,6 +15,7 @@ export const PAGES = {
     "Home": Home,
     "Menu": Menu,
     "Nutrition": Nutrition,
+    "Order": Order,
 }
 
 export const pagesConfig = {

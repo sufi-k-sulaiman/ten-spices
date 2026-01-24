@@ -138,7 +138,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              to={createPageUrl('Menu')}
+              to={createPageUrl('Order')}
               className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-purple-700 text-white text-sm font-semibold rounded-full shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300"
             >
               Order Now
@@ -203,7 +203,7 @@ export default function Header() {
               ))}
 
               <Link
-                to={createPageUrl('Menu')}
+                to={createPageUrl('Order')}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block w-full text-center px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-semibold rounded-xl shadow-lg mt-4"
               >
