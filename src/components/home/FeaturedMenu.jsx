@@ -41,7 +41,7 @@ export default function FeaturedMenu({ items = [] }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-block text-amber-600 font-medium text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-purple-600 font-medium text-sm uppercase tracking-wider mb-4"
           >
             Our Menu
           </motion.span>
@@ -88,7 +88,7 @@ export default function FeaturedMenu({ items = [] }) {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="font-serif text-2xl font-bold text-white mb-2">{category.name}</h3>
                   <p className="text-stone-300 text-sm mb-4">{category.description}</p>
-                  <div className="flex items-center gap-2 text-amber-400 font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-center gap-2 text-purple-400 font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     View Menu
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

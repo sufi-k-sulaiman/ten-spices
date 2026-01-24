@@ -23,7 +23,7 @@ export default function Hero() {
         {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-amber-500/30"
+            className="absolute w-2 h-2 rounded-full bg-purple-500/30"
             initial={{ y: '100vh', x: `${10 + i * 15}%` }}
             animate={{ 
               y: '-10vh',
@@ -46,10 +46,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/20 border border-amber-500/30 backdrop-blur-sm mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/20 border border-purple-500/30 backdrop-blur-sm mb-8"
           >
             <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
-            <span className="text-amber-200 text-sm font-medium">Award-Winning Cuisine</span>
+            <span className="text-purple-200 text-sm font-medium">Award-Winning Cuisine</span>
           </motion.div>
 
           {/* Headline */}
@@ -60,7 +60,7 @@ export default function Hero() {
             className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
           >
             A Symphony of{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-pink-400">
               Ten Spices
             </span>
           </motion.h1>
@@ -85,7 +85,7 @@ export default function Hero() {
           >
             <Link
               to={createPageUrl('Menu')}
-              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-105 transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-semibold rounded-full shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300"
             >
               Explore Our Menu
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -130,7 +130,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full bg-amber-400"
+            className="w-1.5 h-1.5 rounded-full bg-purple-400"
           />
         </div>
       </motion.div>
