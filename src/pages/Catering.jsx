@@ -95,7 +95,7 @@ export default function Catering() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block text-amber-400 font-medium text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-purple-400 font-medium text-sm uppercase tracking-wider mb-4"
           >
             Catering Services
           </motion.span>
@@ -141,8 +141,8 @@ export default function Catering() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center mx-auto mb-6">
-                  <service.icon className="w-8 h-8 text-amber-600" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center mx-auto mb-6">
+                  <service.icon className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="font-semibold text-xl text-stone-800 mb-3">{service.title}</h3>
                 <p className="text-stone-500">{service.description}</p>
@@ -179,7 +179,7 @@ export default function Catering() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-3"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-purple-500 flex-shrink-0" />
                     <span className="text-stone-700">{feature}</span>
                   </motion.div>
                 ))}
@@ -189,8 +189,8 @@ export default function Catering() {
               <div className="bg-stone-50 rounded-2xl p-6 space-y-4">
                 <h3 className="font-semibold text-stone-800 mb-4">Prefer to talk?</h3>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-amber-600" />
+                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <p className="text-sm text-stone-500">Call us at</p>
@@ -198,8 +198,8 @@ export default function Catering() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
-                    <Mail className="w-5 h-5 text-amber-600" />
+                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Mail className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <p className="text-sm text-stone-500">Email us at</p>
@@ -313,7 +313,7 @@ export default function Catering() {
                   <Button
                     type="submit"
                     disabled={mutation.isPending}
-                    className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white rounded-xl py-6 text-lg font-semibold shadow-lg shadow-amber-500/25"
+                    className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-xl py-6 text-lg font-semibold shadow-lg shadow-purple-500/25"
                   >
                     {mutation.isPending ? 'Submitting...' : 'Submit Request'}
                   </Button>

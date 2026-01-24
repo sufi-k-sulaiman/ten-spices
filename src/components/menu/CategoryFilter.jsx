@@ -27,7 +27,7 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }) {
             whileTap={{ scale: 0.95 }}
             className={`relative flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all duration-300 ${
               isActive
-                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/25'
+                ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg shadow-purple-500/25'
                 : 'bg-white text-stone-600 hover:bg-stone-50 shadow-md'
             }`}
           >

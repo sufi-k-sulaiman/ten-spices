@@ -60,7 +60,7 @@ export default function Nutrition() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block text-amber-400 font-medium text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-purple-400 font-medium text-sm uppercase tracking-wider mb-4"
           >
             Transparency & Health
           </motion.span>
@@ -100,7 +100,7 @@ export default function Nutrition() {
               <span className="text-sm text-stone-600">Vegan</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="p-2 bg-amber-500 rounded-full">
+              <span className="p-2 bg-purple-500 rounded-full">
                 <Wheat className="w-4 h-4 text-white" />
               </span>
               <span className="text-sm text-stone-600">Gluten-Free</span>

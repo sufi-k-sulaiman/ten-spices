@@ -149,24 +149,24 @@ export default function MenuGrid({ items = [], isLoading }) {
                       <h4 className="font-semibold text-stone-800 mb-3">Nutrition Facts</h4>
                       <div className="grid grid-cols-4 gap-4 text-center">
                         <div>
-                          <p className="text-2xl font-bold text-amber-600">{item.calories}</p>
+                          <p className="text-2xl font-bold text-purple-600">{item.calories}</p>
                           <p className="text-xs text-stone-500">Calories</p>
                         </div>
                         {item.protein && (
                           <div>
-                            <p className="text-2xl font-bold text-amber-600">{item.protein}g</p>
+                            <p className="text-2xl font-bold text-purple-600">{item.protein}g</p>
                             <p className="text-xs text-stone-500">Protein</p>
                           </div>
                         )}
                         {item.carbs && (
                           <div>
-                            <p className="text-2xl font-bold text-amber-600">{item.carbs}g</p>
+                            <p className="text-2xl font-bold text-purple-600">{item.carbs}g</p>
                             <p className="text-xs text-stone-500">Carbs</p>
                           </div>
                         )}
                         {item.fat && (
                           <div>
-                            <p className="text-2xl font-bold text-amber-600">{item.fat}g</p>
+                            <p className="text-2xl font-bold text-purple-600">{item.fat}g</p>
                             <p className="text-xs text-stone-500">Fat</p>
                           </div>
                         )}
@@ -192,7 +192,7 @@ export default function MenuGrid({ items = [], isLoading }) {
                   )}
 
                   <div className="flex justify-between items-center pt-4 border-t">
-                    <span className="text-2xl font-bold text-amber-600">${item.price?.toFixed(2)}</span>
+                    <span className="text-2xl font-bold text-purple-600">${item.price?.toFixed(2)}</span>
                   </div>
                 </div>
               </DialogContent>
