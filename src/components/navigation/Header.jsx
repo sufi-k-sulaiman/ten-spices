@@ -46,20 +46,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-red-600 flex items-center justify-center shadow-lg group-hover:shadow-amber-500/30 transition-all duration-300 group-hover:scale-105">
-                <span className="text-white font-bold text-lg">10</span>
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-amber-400 rounded-full animate-pulse" />
-            </div>
-            <div className="flex flex-col">
-              <span className={`font-serif text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-stone-800' : 'text-white'}`}>
-                Ten Spices
-              </span>
-              <span className={`text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 ${isScrolled ? 'text-amber-600' : 'text-amber-200'}`}>
-                Café & Kitchen
-              </span>
-            </div>
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/882b275dd_TenSpicesLogo.png"
+              alt="Ten Spices Logo"
+              className="h-12 w-auto transition-all duration-300 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,7 +59,7 @@ export default function Header() {
               to={createPageUrl('Home')}
               className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
                 isScrolled
-                  ? 'text-stone-700 hover:text-amber-600 hover:bg-amber-50'
+                  ? 'text-stone-700 hover:text-purple-600 hover:bg-purple-50'
                   : 'text-white/90 hover:text-white hover:bg-white/10'
               }`}
             >
@@ -104,7 +95,7 @@ export default function Header() {
                     <div className="p-2">
                       <Link
                         to={createPageUrl('Menu')}
-                        className="block px-4 py-3 text-sm font-semibold text-stone-800 hover:bg-gradient-to-r hover:from-amber-50 hover:to-orange-50 rounded-xl transition-all duration-200"
+                        className="block px-4 py-3 text-sm font-semibold text-stone-800 hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 rounded-xl transition-all duration-200"
                       >
                         View Full Menu
                       </Link>
@@ -113,7 +104,7 @@ export default function Header() {
                         <Link
                           key={item.category}
                           to={createPageUrl('Menu') + `?category=${item.category}`}
-                          className="block px-4 py-2.5 text-sm text-stone-600 hover:text-amber-600 hover:bg-amber-50/50 rounded-xl transition-all duration-200"
+                          className="block px-4 py-2.5 text-sm text-stone-600 hover:text-purple-600 hover:bg-purple-50/50 rounded-xl transition-all duration-200"
                         >
                           {item.name}
                         </Link>
@@ -143,7 +134,7 @@ export default function Header() {
           <div className="hidden lg:block">
             <Link
               to={createPageUrl('Menu')}
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold rounded-full shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-purple-600 to-purple-700 text-white text-sm font-semibold rounded-full shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300"
             >
               Order Now
             </Link>
@@ -187,7 +178,7 @@ export default function Header() {
                       key={item.category}
                       to={createPageUrl('Menu') + `?category=${item.category}`}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="px-3 py-2 text-sm text-stone-600 bg-stone-50 rounded-lg hover:bg-amber-50 hover:text-amber-600 transition-colors"
+                      className="px-3 py-2 text-sm text-stone-600 bg-stone-50 rounded-lg hover:bg-purple-50 hover:text-purple-600 transition-colors"
                     >
                       {item.name}
                     </Link>
@@ -200,7 +191,7 @@ export default function Header() {
                   key={link.path}
                   to={createPageUrl(link.path)}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-4 py-3 text-stone-800 font-medium rounded-xl hover:bg-amber-50 transition-colors"
+                  className="block px-4 py-3 text-stone-800 font-medium rounded-xl hover:bg-purple-50 transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -209,7 +200,7 @@ export default function Header() {
               <Link
                 to={createPageUrl('Menu')}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg mt-4"
+                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-semibold rounded-xl shadow-lg mt-4"
               >
                 Order Now
               </Link>
