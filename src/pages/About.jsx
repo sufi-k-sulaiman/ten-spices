@@ -15,22 +15,22 @@ export default function About() {
 
   const team = [
     {
-      name: 'Chef Marco Rodriguez',
+      name: 'Chef Sri Ranjanie',
       role: 'Executive Chef & Founder',
-      image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80',
-      bio: 'With 25 years of culinary experience across three continents, Chef Marco brings a world of flavors to every dish.'
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
+      bio: 'With 25 years of culinary experience across three continents, Chef Sri brings a world of flavors to every dish.'
     },
     {
-      name: 'Sarah Chen',
+      name: 'Niroshi Nadarajah',
       role: 'Head Pastry Chef',
-      image: 'https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400&q=80',
-      bio: 'A graduate of Le Cordon Bleu, Sarah creates desserts that are both visually stunning and delicious.'
+      image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80',
+      bio: 'A graduate of Le Cordon Bleu, Niroshi creates desserts that are both visually stunning and delicious.'
     },
     {
-      name: 'James Wilson',
+      name: 'Liya Elayna',
       role: 'General Manager',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-      bio: 'James ensures every guest receives the warm hospitality that defines the Ten Spices experience.'
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+      bio: 'Liya ensures every guest receives the warm hospitality that defines the Ten Spices experience.'
     },
   ];
 
@@ -111,8 +111,8 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
-                  Ten Spices began in 2008 when Chef Marco Rodriguez, after years of traveling and learning 
-                  from master chefs around the world, decided to bring his unique culinary vision to life. 
+                  Ten Spices began in 2008 when Chef Sri Ranjanie, after years of traveling and learning 
+                  from master chefs around the world, decided to bring her unique culinary vision to life. 
                   The concept was simple yet revolutionary: create dishes that celebrate the perfect 
                   harmony of ten carefully selected spices.
                 </p>
