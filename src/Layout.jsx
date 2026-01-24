@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Header from '@/components/navigation/Header';
 import Footer from '@/components/navigation/Footer';
+import FloatingCartButton from '@/components/cart/FloatingCartButton';
+import { CartProvider } from '@/components/cart/CartContext';
 import { Toaster } from 'sonner';
 
 export default function Layout({ children }) {
@@ -13,7 +15,8 @@ export default function Layout({ children }) {
     document.getElementsByTagName('head')[0].appendChild(link);
   }, []);
   return (
-    <div className="min-h-screen bg-stone-50">
+    <CartProvider>
+      <div className="min-h-screen bg-stone-50">
       <style>
         {`
           @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -58,7 +61,9 @@ export default function Layout({ children }) {
       <Toaster position="top-center" richColors />
       <Header />
       <main>{children}</main>
+      <FloatingCartButton />
       <Footer />
     </div>
+    </CartProvider>
   );
 }

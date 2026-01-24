@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Checkbox } from '@/components/ui/checkbox';
 import CategoryFilter from '@/components/menu/CategoryFilter';
 import MenuGrid from '@/components/menu/MenuGrid';
+import { useCart } from '@/components/cart/CartContext';
 
 export default function Menu() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -19,6 +20,8 @@ export default function Menu() {
     vegan: false,
     glutenFree: false,
   });
+
+  const { addToCart } = useCart();
 
   const { data: menuItems = [], isLoading } = useQuery({
     queryKey: ['menuItems'],
@@ -159,7 +162,7 @@ export default function Menu() {
             </p>
           </div>
 
-          <MenuGrid items={filteredItems} isLoading={isLoading} />
+          <MenuGrid items={filteredItems} isLoading={isLoading} onAddToCart={addToCart} />
         </div>
       </section>
     </div>

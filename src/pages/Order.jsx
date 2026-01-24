@@ -10,10 +10,9 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
+import { useCart } from '@/components/cart/CartContext';
 
 export default function Order() {
-  const [cart, setCart] = useState([]);
-  const [showCart, setShowCart] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
   const [customerInfo, setCustomerInfo] = useState({
     customer_name: '',
@@ -24,6 +23,8 @@ export default function Order() {
     notes: '',
   });
 
+  const { cart, addToCart, updateQuantity, removeFromCart, clearCart, calculateSubtotal, calculateTax, calculateTotal } = useCart();
+
   const { data: menuItems = [], isLoading } = useQuery({
     queryKey: ['menuItems'],
     queryFn: () => base44.entities.MenuItem.list(),
@@ -33,7 +34,7 @@ export default function Order() {
     mutationFn: (orderData) => base44.entities.Order.create(orderData),
     onSuccess: () => {
       toast.success('Order placed successfully! We\'ll contact you shortly.');
-      setCart([]);
+      clearCart();
       setShowCheckout(false);
       setCustomerInfo({
         customer_name: '',
@@ -48,44 +49,6 @@ export default function Order() {
       toast.error('Failed to place order. Please try again.');
     },
   });
-
-  const addToCart = (item) => {
-    const existingItem = cart.find((i) => i.id === item.id);
-    if (existingItem) {
-      setCart(cart.map((i) => 
-        i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
-      ));
-    } else {
-      setCart([...cart, { ...item, quantity: 1 }]);
-    }
-    toast.success(`${item.name} added to cart`);
-  };
-
-  const updateQuantity = (itemId, change) => {
-    setCart(cart.map((item) => {
-      if (item.id === itemId) {
-        const newQuantity = item.quantity + change;
-        return newQuantity > 0 ? { ...item, quantity: newQuantity } : item;
-      }
-      return item;
-    }).filter((item) => item.quantity > 0));
-  };
-
-  const removeFromCart = (itemId) => {
-    setCart(cart.filter((item) => item.id !== itemId));
-  };
-
-  const calculateSubtotal = () => {
-    return cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  };
-
-  const calculateTax = () => {
-    return calculateSubtotal() * 0.13; // 13% tax
-  };
-
-  const calculateTotal = () => {
-    return calculateSubtotal() + calculateTax();
-  };
 
   const handlePlaceOrder = () => {
     if (cart.length === 0) {
