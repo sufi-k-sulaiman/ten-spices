@@ -41,12 +41,12 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Call Us',
-      lines: ['(555) 123-4567', 'Mon-Sun: 7am - 10pm'],
+      lines: ['+1 438 449 8143', 'Mon-Sun: 7am - 10pm'],
     },
     {
       icon: Mail,
       title: 'Email Us',
-      lines: ['hello@tenspices.com', 'catering@tenspices.com'],
+      lines: ['enjoytenspices@gmail.com', 'catering@tenspices.com'],
     },
     {
       icon: Clock,

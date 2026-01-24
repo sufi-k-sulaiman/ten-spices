@@ -194,7 +194,7 @@ export default function Catering() {
                   </div>
                   <div>
                     <p className="text-sm text-stone-500">Call us at</p>
-                    <p className="font-medium text-stone-800">(555) 123-4567</p>
+                    <p className="font-medium text-stone-800">+1 438 449 8143</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -203,7 +203,7 @@ export default function Catering() {
                   </div>
                   <div>
                     <p className="text-sm text-stone-500">Email us at</p>
-                    <p className="font-medium text-stone-800">catering@tenspices.com</p>
+                    <p className="font-medium text-stone-800">enjoytenspices@gmail.com</p>
                   </div>
                 </div>
               </div>
