@@ -36,7 +36,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      lines: ['123 Culinary Street', 'Foodie District, NY 10001'],
+      lines: ['16950 Rue de l\'Ambre', 'Mirabel, QC J7N 0K4'],
     },
     {
       icon: Phone,
@@ -131,7 +131,7 @@ export default function Contact() {
             >
               <div className="bg-white rounded-3xl overflow-hidden shadow-xl h-full min-h-[400px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076904379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.8947556!2d-74.0359!3d45.6568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf3f5b9f3b5b5b%3A0x5b5b5b5b5b5b5b5b!2s16950%20Rue%20de%20l'Ambre%2C%20Mirabel%2C%20QC%20J7N%200K4!5e0!3m2!1sen!2sca!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: '400px' }}

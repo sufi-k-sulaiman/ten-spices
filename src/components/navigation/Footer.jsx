@@ -65,8 +65,8 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                 <span className="text-stone-400 text-sm">
-                  123 Culinary Street<br />
-                  Foodie District, NY 10001
+                  16950 Rue de l'Ambre<br />
+                  Mirabel, QC J7N 0K4
                 </span>
               </li>
               <li className="flex items-center gap-3">
