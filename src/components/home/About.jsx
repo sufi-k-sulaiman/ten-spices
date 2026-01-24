@@ -54,8 +54,8 @@ export default function AboutSection() {
               />
             </div>
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-amber-500/20 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-orange-500/20 rounded-full blur-2xl" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-600/20 rounded-full blur-2xl" />
           </motion.div>
 
           {/* Content */}
@@ -69,7 +69,7 @@ export default function AboutSection() {
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-stone-800 mb-6 leading-tight">
               A Passion for{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
                 Culinary Excellence
               </span>
             </h2>
@@ -91,8 +91,8 @@ export default function AboutSection() {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="w-5 h-5 text-amber-600" />
+                  <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+                    <feature.icon className="w-5 h-5 text-purple-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-stone-800 text-sm">{feature.title}</h4>
@@ -104,7 +104,7 @@ export default function AboutSection() {
 
             <Link
               to={createPageUrl('About')}
-              className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors group"
+              className="inline-flex items-center gap-2 text-purple-600 font-semibold hover:text-purple-700 transition-colors group"
             >
               Learn More About Us
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

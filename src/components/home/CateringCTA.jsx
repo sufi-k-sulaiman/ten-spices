@@ -30,7 +30,7 @@ export default function CateringCTA() {
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
               Let Us Bring the{' '}
-              <span className="text-amber-400">Feast to You</span>
+              <span className="text-purple-400">Feast to You</span>
             </h2>
             <p className="text-stone-300 text-lg leading-relaxed mb-8">
               From intimate gatherings to grand celebrations, our catering team brings the 
@@ -53,8 +53,8 @@ export default function CateringCTA() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-14 h-14 rounded-2xl bg-amber-500/20 flex items-center justify-center mx-auto mb-3">
-                    <item.icon className="w-6 h-6 text-amber-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center mx-auto mb-3">
+                    <item.icon className="w-6 h-6 text-purple-400" />
                   </div>
                   <p className="text-white text-sm font-medium">{item.label}</p>
                 </motion.div>
@@ -63,7 +63,7 @@ export default function CateringCTA() {
 
             <Link
               to={createPageUrl('Catering')}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-semibold rounded-full shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300"
             >
               Plan Your Event
               <ArrowRight className="w-5 h-5" />

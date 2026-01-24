@@ -38,12 +38,12 @@ export default function Layout({ children }) {
           }
           
           ::-webkit-scrollbar-thumb {
-            background: #d4a574;
+            background: #9333ea;
             border-radius: 5px;
           }
           
           ::-webkit-scrollbar-thumb:hover {
-            background: #c4955f;
+            background: #7e22ce;
           }
         `}
       </style>

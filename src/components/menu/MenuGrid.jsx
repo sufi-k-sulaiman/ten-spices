@@ -82,7 +82,7 @@ export default function MenuGrid({ items = [], isLoading }) {
             {/* Featured Badge */}
             {item.is_featured && (
               <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-semibold rounded-full">
+                <span className="px-3 py-1 bg-gradient-to-r from-purple-600 to-purple-700 text-white text-xs font-semibold rounded-full">
                   Chef's Special
                 </span>
               </div>
@@ -92,10 +92,10 @@ export default function MenuGrid({ items = [], isLoading }) {
           {/* Content */}
           <div className="p-6">
             <div className="flex justify-between items-start mb-3">
-              <h3 className="font-semibold text-lg text-stone-800 group-hover:text-amber-600 transition-colors">
+              <h3 className="font-semibold text-lg text-stone-800 group-hover:text-purple-600 transition-colors">
                 {item.name}
               </h3>
-              <span className="text-amber-600 font-bold text-lg">
+              <span className="text-purple-600 font-bold text-lg">
                 ${item.price?.toFixed(2)}
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function MenuGrid({ items = [], isLoading }) {
             {/* Details Dialog */}
             <Dialog>
               <DialogTrigger asChild>
-                <button className="mt-4 flex items-center gap-2 text-sm text-amber-600 font-medium hover:text-amber-700 transition-colors">
+                <button className="mt-4 flex items-center gap-2 text-sm text-purple-600 font-medium hover:text-purple-700 transition-colors">
                   <Info className="w-4 h-4" />
                   View Details
                 </button>
