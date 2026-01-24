@@ -71,7 +71,7 @@ export default function Contact() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block text-amber-400 font-medium text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-purple-400 font-medium text-sm uppercase tracking-wider mb-4"
           >
             Get In Touch
           </motion.span>

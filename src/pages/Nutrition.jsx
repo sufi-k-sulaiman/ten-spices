@@ -193,7 +193,7 @@ export default function Nutrition() {
                           </div>
                         </TableCell>
                         <TableCell className="text-center">
-                          <span className="font-semibold text-amber-600">{item.calories || '-'}</span>
+                          <span className="font-semibold text-purple-600">{item.calories || '-'}</span>
                         </TableCell>
                         <TableCell className="text-center text-stone-600">
                           {item.protein ? `${item.protein}g` : '-'}
@@ -217,8 +217,8 @@ export default function Nutrition() {
                               </span>
                             )}
                             {item.is_gluten_free && (
-                              <span className="p-1.5 bg-amber-100 rounded-full" title="Gluten-Free">
-                                <Wheat className="w-3 h-3 text-amber-600" />
+                              <span className="p-1.5 bg-purple-100 rounded-full" title="Gluten-Free">
+                                <Wheat className="w-3 h-3 text-purple-600" />
                               </span>
                             )}
                           </div>
@@ -269,7 +269,7 @@ export default function Nutrition() {
                 className="bg-stone-50 rounded-xl p-6"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-500" />
+                  <AlertTriangle className="w-5 h-5 text-purple-500" />
                   <h3 className="font-semibold text-stone-800">{allergen.name}</h3>
                 </div>
                 <p className="text-stone-500 text-sm">{allergen.description}</p>
@@ -278,12 +278,12 @@ export default function Nutrition() {
           </div>
 
           {/* Disclaimer */}
-          <div className="mt-12 bg-amber-50 border border-amber-100 rounded-2xl p-6">
+          <div className="mt-12 bg-purple-50 border border-purple-100 rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <Info className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
+              <Info className="w-6 h-6 text-purple-600 flex-shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-semibold text-amber-800 mb-2">Important Notice</h4>
-                <p className="text-amber-700 text-sm">
+                <h4 className="font-semibold text-purple-800 mb-2">Important Notice</h4>
+                <p className="text-purple-700 text-sm">
                   Our kitchen handles multiple allergens. While we take precautions to prevent cross-contamination, 
                   we cannot guarantee that any item is completely free from allergens. If you have severe allergies, 
                   please speak with our manager before ordering.

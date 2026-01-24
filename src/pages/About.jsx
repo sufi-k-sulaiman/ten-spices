@@ -73,7 +73,7 @@ export default function About() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block text-amber-400 font-medium text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-purple-400 font-medium text-sm uppercase tracking-wider mb-4"
           >
             Our Story
           </motion.span>
@@ -107,7 +107,7 @@ export default function About() {
             >
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-stone-800 mb-6">
                 Where Passion Meets{' '}
-                <span className="text-amber-600">Flavor</span>
+                <span className="text-purple-600">Flavor</span>
               </h2>
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
@@ -141,8 +141,8 @@ export default function About() {
               />
               <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl p-6 shadow-xl">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-amber-100 flex items-center justify-center">
-                    <Clock className="w-7 h-7 text-amber-600" />
+                  <div className="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Clock className="w-7 h-7 text-purple-600" />
                   </div>
                   <div>
                     <p className="text-3xl font-bold text-stone-800">15+</p>
@@ -177,8 +177,8 @@ export default function About() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center mx-auto mb-6">
-                  <value.icon className="w-8 h-8 text-amber-600" />
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center mx-auto mb-6">
+                  <value.icon className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="font-semibold text-xl text-stone-800 mb-3">{value.title}</h3>
                 <p className="text-stone-500">{value.description}</p>
@@ -202,7 +202,7 @@ export default function About() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-amber-500/30" />
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-purple-500/30" />
 
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
@@ -218,12 +218,12 @@ export default function About() {
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                     <div className="bg-stone-800 rounded-2xl p-6">
-                      <span className="text-amber-400 font-bold text-lg">{milestone.year}</span>
+                      <span className="text-purple-400 font-bold text-lg">{milestone.year}</span>
                       <h3 className="text-white font-semibold text-xl mt-2 mb-2">{milestone.title}</h3>
                       <p className="text-stone-400">{milestone.description}</p>
                     </div>
                   </div>
-                  <div className="hidden md:flex w-12 h-12 rounded-full bg-amber-500 items-center justify-center z-10 flex-shrink-0">
+                  <div className="hidden md:flex w-12 h-12 rounded-full bg-purple-600 items-center justify-center z-10 flex-shrink-0">
                     <div className="w-4 h-4 rounded-full bg-white" />
                   </div>
                   <div className="flex-1" />
@@ -263,7 +263,7 @@ export default function About() {
                 />
                 <div className="p-6">
                   <h3 className="font-semibold text-xl text-stone-800">{member.name}</h3>
-                  <p className="text-amber-600 text-sm mb-3">{member.role}</p>
+                  <p className="text-purple-600 text-sm mb-3">{member.role}</p>
                   <p className="text-stone-500 text-sm">{member.bio}</p>
                 </div>
               </motion.div>
@@ -273,7 +273,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-orange-500">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Experience Ten Spices?
@@ -284,7 +284,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to={createPageUrl('Menu')}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-amber-600 font-semibold rounded-full hover:bg-stone-50 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-purple-600 font-semibold rounded-full hover:bg-stone-50 transition-colors"
             >
               View Our Menu
               <ArrowRight className="w-5 h-5" />
