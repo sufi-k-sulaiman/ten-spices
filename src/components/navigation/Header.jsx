@@ -121,7 +121,7 @@ export default function Header() {
                 to={createPageUrl(link.path)}
                 className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-300 ${
                   isScrolled
-                    ? 'text-stone-700 hover:text-amber-600 hover:bg-amber-50'
+                    ? 'text-stone-700 hover:text-purple-600 hover:bg-purple-50'
                     : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -165,7 +165,7 @@ export default function Header() {
               <Link
                 to={createPageUrl('Home')}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-4 py-3 text-stone-800 font-medium rounded-xl hover:bg-amber-50 transition-colors"
+                className="block px-4 py-3 text-stone-800 font-medium rounded-xl hover:bg-purple-50 transition-colors"
               >
                 Home
               </Link>

@@ -12,13 +12,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-red-600 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">10</span>
-              </div>
-              <div>
-                <span className="font-serif text-xl font-bold">Ten Spices</span>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-amber-400">Café & Kitchen</p>
-              </div>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697534ce5687a77bafcb64b3/882b275dd_TenSpicesLogo.png"
+                alt="Ten Spices Logo"
+                className="h-12 w-auto brightness-110"
+              />
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
               Where every dish tells a story through the perfect blend of ten signature spices. 
@@ -51,7 +49,7 @@ export default function Footer() {
                 <li key={link.path}>
                   <Link
                     to={createPageUrl(link.path)}
-                    className="text-stone-400 hover:text-amber-400 transition-colors duration-300 text-sm"
+                    className="text-stone-400 hover:text-purple-400 transition-colors duration-300 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -65,18 +63,18 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                 <span className="text-stone-400 text-sm">
                   123 Culinary Street<br />
                   Foodie District, NY 10001
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-purple-500 flex-shrink-0" />
                 <span className="text-stone-400 text-sm">(555) 123-4567</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-amber-500 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-purple-500 flex-shrink-0" />
                 <span className="text-stone-400 text-sm">hello@tenspices.com</span>
               </li>
             </ul>
@@ -87,7 +85,7 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-6">Opening Hours</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" />
                 <div className="text-sm">
                   <p className="text-white font-medium">Monday - Friday</p>
                   <p className="text-stone-400">7:00 AM - 10:00 PM</p>
@@ -113,8 +111,8 @@ export default function Footer() {
               © {new Date().getFullYear()} Ten Spices Café. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-stone-500 hover:text-amber-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="text-stone-500 hover:text-amber-400 transition-colors">Terms of Service</a>
+              <a href="#" className="text-stone-500 hover:text-purple-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="text-stone-500 hover:text-purple-400 transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>
