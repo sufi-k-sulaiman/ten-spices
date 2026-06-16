@@ -1,0 +1,78 @@
+{
+  "name": "MenuItem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the menu item"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the item"
+    },
+    "price": {
+      "type": "number",
+      "description": "Price in dollars"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "breakfast",
+        "lunch",
+        "dinner",
+        "beverages",
+        "desserts",
+        "sides"
+      ],
+      "description": "Menu category"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Image URL for the item"
+    },
+    "calories": {
+      "type": "number",
+      "description": "Calorie count"
+    },
+    "protein": {
+      "type": "number",
+      "description": "Protein in grams"
+    },
+    "carbs": {
+      "type": "number",
+      "description": "Carbohydrates in grams"
+    },
+    "fat": {
+      "type": "number",
+      "description": "Fat in grams"
+    },
+    "is_vegetarian": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_vegan": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_gluten_free": {
+      "type": "boolean",
+      "default": false
+    },
+    "allergens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of allergens"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "price",
+    "category"
+  ]
+}

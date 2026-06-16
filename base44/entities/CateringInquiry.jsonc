@@ -1,0 +1,58 @@
+{
+  "name": "CateringInquiry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Customer name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Customer email"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "corporate",
+        "wedding",
+        "birthday",
+        "private_party",
+        "other"
+      ],
+      "description": "Type of event"
+    },
+    "event_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the event"
+    },
+    "guest_count": {
+      "type": "number",
+      "description": "Number of guests"
+    },
+    "message": {
+      "type": "string",
+      "description": "Additional details"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "contacted",
+        "confirmed",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "name",
+    "email",
+    "event_type",
+    "guest_count"
+  ]
+}
